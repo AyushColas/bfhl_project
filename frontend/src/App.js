@@ -9,7 +9,7 @@ const App = () => {
   const handleSubmit = async () => {
     try {
       const parsedInput = JSON.parse(input);
-      const res = await axios.post("https://bfhl-project-1gn0.onrender.com", parsedInput);
+      const res = await axios.post("https://bfhl-project-8btq.onrender.com/bfhl", parsedInput);
       setResponse(res.data);
     } catch (error) {
       alert("Invalid JSON or server error");
